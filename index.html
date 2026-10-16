@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WITCHCRAFT.BOUTIQUE - The Atelier</title>
+<meta name="description" content="Commissioned work for businesses and private clients. One at a time, taken on merit.">
+<link rel="canonical" href="https://witchcraft.boutique/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20fill='%23050505'/%3E%3Ccircle%20cx='38'%20cy='44'%20r='7'%20fill='%238B5CF6'/%3E%3C/svg%3E">
+<meta property="og:title" content="WITCHCRAFT.BOUTIQUE - The Atelier">
+<meta property="og:description" content="Commissioned work for businesses and private clients. One at a time, taken on merit.">
+<meta property="og:url" content="https://witchcraft.boutique/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://witchcraft.boutique/og.jpg">
+<meta property="og:image" content="https://witchcraft.boutique/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="The commissioned vessel, obsidian on black.">
+<meta name="theme-color" content="#050505">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"WITCHCRAFT.BOUTIQUE - The Atelier","url":"https://witchcraft.boutique/","description":"Commissioned work for businesses and private clients. One at a time, taken on merit.","isPartOf":{"@type":"WebSite","name":"Witchcraft AI","url":"https://witchcraft.business/"},"publisher":{"@type":"Organization","name":"WITCHCRAFT AI","url":"https://pitch./"}}</script>
+<style>
+:root{
+  --bg:#050505; --bg2:#0a0a0a; --ink:#EDEDED; --ink-warm:#F5F2EA;
+  --dim:#8A8A8A; --faint:#4A4A4A; --rule:#1E1E1E; --violet:#8B5CF6;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:"Helvetica Neue","Neue Haas Grotesk Display",Helvetica,Arial,sans-serif;
+  --serif:"Didot","Bodoni MT","Bodoni 72",Georgia,serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:var(--sans);font-weight:300;
+  -webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:1px solid var(--violet);outline-offset:4px}
+::selection{background:var(--violet);color:#fff}
+
+/* ---------- THE GROUND: living silk field + grain + vignette ---------- */
+#field{position:fixed;inset:0;width:100%;height:100%;z-index:0;display:block;opacity:.62}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:overlay}
+.grain svg{width:100%;height:100%;display:block}
+.vignette{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(130% 100% at 50% 30%,transparent 0%,transparent 46%,rgba(0,0,0,.42) 82%,rgba(0,0,0,.74) 100%);}
+
+main,nav,footer{position:relative;z-index:2}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+
+/* ---------- NAV ---------- */
+nav{border-bottom:1px solid var(--rule)}
+nav .wrap{display:flex;gap:30px;align-items:center;height:64px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
+nav a{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:var(--ink);transition:width .6s var(--ease)}
+nav a:hover{color:var(--ink)}
+nav a:hover::after{width:100%}
+nav .brand{color:var(--ink);margin-right:auto;letter-spacing:.26em}
+nav .brand .violet{color:var(--violet)}
+
+/* ---------- HERO ---------- */
+header{padding:clamp(120px,18vh,196px) 0 72px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--faint);display:flex;align-items:center;gap:16px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--violet)}
+h1{
+  font-family:var(--sans);font-weight:100;
+  font-size:clamp(58px,10.5vw,172px);line-height:.92;letter-spacing:-.02em;
+  text-transform:uppercase;color:var(--ink-warm);margin-top:34px;text-wrap:balance;
+}
+h1 .violet{color:var(--violet)}
+.sole{width:34px;height:2px;background:var(--violet);margin:44px 0 0}
+.promise{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(21px,3vw,40px);line-height:1.25;letter-spacing:0;color:#c9c9c9;max-width:30ch;margin-top:26px}
+.lede{max-width:54ch;margin-top:30px;color:var(--dim);font-size:16px;line-height:1.7}
+.cta{display:inline-block;margin-top:48px;font-family:var(--mono);font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--faint);padding-bottom:7px;transition:border-color .6s var(--ease),color .6s var(--ease),letter-spacing .6s var(--ease)}
+.cta:hover{border-color:var(--violet);color:var(--violet);letter-spacing:.42em}
+
+/* ---------- SECTIONS ---------- */
+section{padding:104px 0}
+.head{display:grid;grid-template-columns:210px 1fr;gap:40px;align-items:start;margin-bottom:58px}
+.head h2{font-size:clamp(26px,4.4vw,56px);font-weight:100;letter-spacing:-.015em;max-width:24ch;text-wrap:balance;text-transform:uppercase}
+@media(max-width:760px){.head{grid-template-columns:1fr;gap:14px}}
+
+/* ---------- THE TURNTABLE ---------- */
+figure.plate{margin:0;padding:8vh 0 4vh}
+.turntable{display:flex;flex-direction:column;align-items:center;perspective:1200px;--stageH:clamp(360px,56vh,560px)}
+.stage{position:relative;width:min(430px,84vw);height:var(--stageH);transform-style:preserve-3d;cursor:grab;touch-action:pan-y}
+.stage:active{cursor:grabbing}
+.poster{position:absolute;inset:0;transition:opacity 1.2s var(--ease)}
+.poster svg{display:block;width:100%;height:100%}
+.poster-turn{transform:rotateY(var(--turn,0deg));transform-origin:50% 50%;animation:sway 26s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:rotateY(-7deg)}50%{transform:rotateY(7deg)}}
+.stage.touched .poster-turn{animation:none}
+.sheen{animation:sheen 10s linear infinite}
+@keyframes sheen{0%{transform:translateX(-190px)}100%{transform:translateX(230px)}}
+canvas#lathe{position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity 1.3s var(--ease);touch-action:none;display:block}
+.turntable.is-live canvas#lathe{opacity:1}
+.turntable.is-live .poster{opacity:0}
+.plinth{width:min(248px,54vw);margin-top:calc(var(--stageH) * -0.135 - 12px);position:relative;pointer-events:none}
+.plinth i{display:block}
+.plinth .top{width:94%;margin:0 auto;height:20px;border-radius:50%;background:linear-gradient(186deg,#2a2a2a 0%,#1a1a1a 56%,#0a0a0a 100%);box-shadow:0 1px 0 rgba(255,255,255,.08) inset}
+.plinth .body{height:clamp(64px,9vh,96px);margin-top:-10px;background:linear-gradient(90deg,#0a0a0a 0%,#1c1c1c 10%,#2e2e2e 26%,#3a3a3a 36%,#262626 56%,#121212 82%,#080808 100%);clip-path:polygon(3% 0,97% 0,100% 100%,0 100%)}
+.plinth .band{position:absolute;left:10%;right:10%;top:42px;height:1px;background:rgba(139,92,246,.4)}
+.plinth .shadow{position:absolute;left:-14%;right:-14%;bottom:-24px;height:46px;background:radial-gradient(50% 50% at 50% 50%,rgba(0,0,0,.82) 0%,transparent 72%)}
+.turn-note{margin-top:50px;text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--faint);max-width:46ch;line-height:2.2}
+figcaption{font-family:var(--mono);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--faint);margin-top:34px}
+
+/* ---------- ROWS ---------- */
+.row{display:grid;grid-template-columns:56px 1fr 240px;gap:28px;padding:28px 0;border-top:1px solid var(--rule);align-items:baseline;text-align:left}
+.row:last-child{border-bottom:1px solid var(--rule)}
+.row .n{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.row h3{font-size:18px;font-weight:400;letter-spacing:.1em;text-transform:uppercase}
+.row p{color:var(--dim);font-size:14px;margin-top:10px;max-width:62ch}
+.row .meta{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#5c5c5c;text-align:right;transition:color .5s var(--ease)}
+.row:hover .meta{color:var(--violet)}
+@media(max-width:860px){.row{grid-template-columns:40px 1fr}.row .meta{grid-column:2;text-align:left;margin-top:10px}}
+
+/* THE BRUISE - one hairline per page stops short. Do not fix it. Do not add a second. */
+.row.bruise{border-top:none;position:relative}
+.row.bruise::before{content:"";position:absolute;top:0;left:0;right:128px;border-top:1px solid var(--rule)}
+
+/* ---------- PULL ---------- */
+.pull{font-size:clamp(28px,5.2vw,72px);font-weight:100;line-height:1.12;max-width:20ch;letter-spacing:-.02em;text-wrap:balance;margin-top:28px}
+
+/* ---------- FOOTER ---------- */
+footer{padding:96px 0 60px;border-top:1px solid var(--rule)}
+footer a{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--dim);position:relative}
+footer a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--ink);transition:width .6s var(--ease)}
+footer a:hover{color:var(--ink)}
+footer a:hover::after{width:100%}
+.fline{display:flex;gap:36px;flex-wrap:wrap;align-items:baseline}
+.label{font-family:var(--mono);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--faint)}
+.legal{margin-top:58px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#3a3a3a;line-height:2}
+
+/* ---------- MOTION ---------- */
+/* Progressive enhancement: content is visible by default. Only when JS
+   confirms it is active (html.js) do elements hide, then reveal in. */
+.js .fx{opacity:0;transform:translateY(28px);transition:opacity 1.4s var(--ease),transform 1.4s var(--ease)}
+.js .fx.on{opacity:1;transform:none}
+.mt .ln{display:block;overflow:hidden}
+.mt .in{display:inline-block}
+.js .mt .in{transform:translateY(110%);transition:transform 1.3s var(--ease)}
+.js .mt.on .in{transform:translateY(0)}
+
+/* ---------- REDUCED MOTION ---------- */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .poster-turn,.sheen{animation:none}
+  .js .fx,.js .mt .in{opacity:1;transform:none;transition:none}
+  .cta{transition:color .01ms}
+}
+</style>
+</head>
+<body>
+
+<!-- THE GROUND: silk field (WebGL), grain, vignette -->
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+</div>
+<div class="vignette" aria-hidden="true"></div>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/">WITCHCRAFT<span class="violet">.</span>BOUTIQUE</a>
+    <a href="#atelier">THE ATELIER</a>
+    <a href="#commissions">COMMISSIONS</a>
+    <a href="https://witchcraft.business">WITCHCRAFT.BUSINESS ↗</a>
+  </div>
+</nav>
+
+<main>
+
+<header class="wrap">
+  <p class="eyebrow fx">BESPOKE COMMISSIONS</p>
+  <h1 class="mt fx"><span class="ln"><span class="in">THE</span></span><span class="ln"><span class="in">ATELIER<span class="violet">.</span></span></span></h1>
+  <div class="sole fx"></div>
+  <p class="promise fx">Made once. For one.</p>
+  <p class="lede fx">Work for businesses and private clients, cut to a single commission. One at a time. Taken on merit, declined without offence.</p>
+  <a class="cta fx" href="mailto:hecate@witch.codes?subject=Commission">COMMISSION →</a>
+</header>
+
+<!-- THE CENTREPIECE: the vessel on its plinth -->
+<figure class="plate fx" data-prompt="A single tall dark vessel on unbroken black, one hard light from camera left, object under 15 percent of frame, extreme negative space, black and white, film grain, brutalist still life">
+  <div class="turntable" id="turntable">
+    <div class="stage" id="stage" tabindex="0" role="application" aria-label="The commissioned vessel on its plinth. Drag it, or press the left and right arrow keys, to turn it. Press Home to set it straight.">
+
+      <div class="poster" id="poster">
+        <svg viewBox="0 0 320 430" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="gBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#d6d6d6"/>
+              <stop offset=".30" stop-color="#6e6e6e"/>
+              <stop offset=".62" stop-color="#2a2a2a"/>
+              <stop offset="1" stop-color="#0a0a0a"/>
+            </linearGradient>
+            <linearGradient id="gCyl" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#000000" stop-opacity=".92"/>
+              <stop offset=".10" stop-color="#141414" stop-opacity=".58"/>
+              <stop offset=".24" stop-color="#ffffff" stop-opacity=".14"/>
+              <stop offset=".34" stop-color="#ffffff" stop-opacity=".20"/>
+              <stop offset=".48" stop-color="#000000" stop-opacity="0"/>
+              <stop offset=".68" stop-color="#000000" stop-opacity=".40"/>
+              <stop offset=".86" stop-color="#000000" stop-opacity=".74"/>
+              <stop offset="1" stop-color="#000000" stop-opacity=".94"/>
+            </linearGradient>
+            <linearGradient id="gSheen" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#ffffff" stop-opacity=".4"/>
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="gFoot" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#000000" stop-opacity=".8"/>
+              <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+            </radialGradient>
+            <path id="vhalf" d="M160 83.9 L198.7 83.9 C193 88 186.5 95 187.3 103.3 C188.6 112 193 116.4 195.2 119.1 C202 126 209 131.4 212.8 136.7 C226 148 233.6 156.4 234.8 164.9 C241 178 242.7 190 242.7 200.1 C242.7 215 241.2 228 239.2 235.3 C236 250 231 264 226.9 274 C219 288 210 300.4 205.8 307.4 C199 316 191 323 190.8 330.3 C190.5 338 192.4 345 195.2 349.7 C199 356 206 358.4 211 362 L207.5 372.6 L160 372.6 Z"/>
+            <path id="vedge" fill="none" d="M198.7 83.9 C193 88 186.5 95 187.3 103.3 C188.6 112 193 116.4 195.2 119.1 C202 126 209 131.4 212.8 136.7 C226 148 233.6 156.4 234.8 164.9 C241 178 242.7 190 242.7 200.1 C242.7 215 241.2 228 239.2 235.3 C236 250 231 264 226.9 274 C219 288 210 300.4 205.8 307.4 C199 316 191 323 190.8 330.3 C190.5 338 192.4 345 195.2 349.7 C199 356 206 358.4 211 362 L207.5 372.6"/>
+            <clipPath id="vclip">
+              <use href="#vhalf"/>
+              <use href="#vhalf" transform="translate(320,0) scale(-1,1)"/>
+            </clipPath>
+          </defs>
+          <ellipse cx="160" cy="376" rx="96" ry="22" fill="url(#gFoot)"/>
+          <g class="poster-turn">
+            <use href="#vhalf" fill="url(#gBody)"/>
+            <use href="#vhalf" transform="translate(320,0) scale(-1,1)" fill="url(#gBody)"/>
+            <g clip-path="url(#vclip)">
+              <rect x="0" y="60" width="320" height="330" fill="url(#gCyl)"/>
+              <rect class="sheen" x="86" y="70" width="30" height="320" fill="url(#gSheen)"/>
+              <path d="M110 150 C 102 212, 104 292, 124 348" fill="none" stroke="#ffffff" stroke-opacity=".4" stroke-width="7" stroke-linecap="round"/>
+              <path d="M232 156 C 244 216, 240 292, 222 342" fill="none" stroke="#c9c9c9" stroke-opacity=".14" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <use href="#vedge" stroke="#cfcfcf" stroke-opacity=".26" stroke-width="1"/>
+            <use href="#vedge" transform="translate(320,0) scale(-1,1)" stroke="#f2f2f2" stroke-opacity=".6" stroke-width="1"/>
+            <ellipse cx="160" cy="83.9" rx="38.7" ry="8.4" fill="#1a1a1a"/>
+            <ellipse cx="160" cy="83.9" rx="38.7" ry="8.4" fill="none" stroke="#c9c9c9" stroke-opacity=".6" stroke-width="1"/>
+            <ellipse cx="160" cy="85.6" rx="30" ry="6" fill="#050505"/>
+          </g>
+        </svg>
+      </div>
+
+      <canvas id="lathe" aria-hidden="true"></canvas>
+    </div>
+    <div class="plinth" aria-hidden="true">
+      <i class="top"></i>
+      <i class="body"></i>
+      <i class="band"></i>
+      <i class="shadow"></i>
+    </div>
+    <p class="turn-note">Turn it. Drag the vessel, or use the arrow keys. Home sets it straight again.</p>
+  </div>
+  <figcaption>PLATE 01 · THE VESSEL</figcaption>
+</figure>
+
+<section id="atelier" class="wrap" style="padding:120px 0 104px">
+  <div class="head fx"><p class="eyebrow">THE ATELIER</p><h2>What a commission is</h2></div>
+  <p class="lede fx">A commission exists once. A private agent trained to one household. A system built to one firm's hand. An object, a room, a way of working that fits nobody else. The atelier takes few, finishes all, and signs the work.</p>
+</section>
+
+<section id="commissions" class="wrap" style="padding:96px 0 120px;border-top:1px solid var(--rule)">
+  <div class="head fx" style="margin-top:58px"><p class="eyebrow">THE COMMISSION</p><h2>Three movements</h2></div>
+  <a class="row fx" href="mailto:hecate@witch.codes?subject=Commission"><span class="n">01</span><div><h3>THE ENQUIRY</h3><p>A letter, not a form. What is to be made, and why it should exist.</p></div><span class="meta">WRITE →</span></a>
+  <div class="row fx"><span class="n">02</span><div><h3>THE CONSULTATION</h3><p>One sitting. Scope, materials, band, time. Declined here if it should be.</p></div><span class="meta">THE SITTING →</span></div>
+  <div class="row fx bruise"><span class="n">03</span><div><h3>THE MAKING</h3><p>Shown at agreed marks. Delivered finished, documented, and once.</p></div><span class="meta">THE WORK →</span></div>
+</section>
+
+<section class="wrap" style="padding:96px 0 140px;border-top:1px solid var(--rule)">
+  <p class="eyebrow fx">CORRESPONDENCE</p>
+  <p class="pull fx">The atelier reads every letter. It answers the ones it can serve.</p>
+  <a class="cta fx" href="mailto:hecate@witch.codes?subject=Commission">A LETTER →</a>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fline fx">
+      <a href="mailto:hecate@witch.codes">HECATE@WITCH.CODES</a>
+      <a href="https://witchcraft.business">WITCHCRAFT.BUSINESS</a>
+      <span class="label">SYDNEY</span>
+      <span class="label">BY APPOINTMENT</span>
+    </div>
+    <p class="legal">© WITCHCRAFT AI · WITCHCRAFT AI · MMXXVI - TWO LINES, ONE ARCHITECTURE</p>
+  </div>
+<div class="cisfoot" style="margin:56px 0 0;padding:22px 0 10px;border-top:1px solid rgba(10,10,10,.25);font-family:Helvetica,Arial,sans-serif;font-size:10px;letter-spacing:.14em;line-height:2.1;color:rgba(10,10,10,.72);text-transform:uppercase;"><a href="https://witch.codes" style="display:block;margin:0 0 16px;"><img src="/assets/foot-art.jpg" alt="WITCH.CODES" style="width:100%;max-width:220px;height:auto;display:block;border:1px solid rgba(10,10,10,.22);"></a><a href="https://witch.codes" style="display:block;margin:0 0 16px;"><img src="/assets/foot-art.jpg" alt="WITCH.CODES" style="width:100%;max-width:220px;height:auto;display:block;border:1px solid rgba(10,10,10,.22);"></a>BUTTERFLY KINGDOM NSW PTY LTD TRADING AS WITCHCRAFT AI &middot; ABN 11 691 050 969 &middot; ACN 691 050 969 &middot; G/17 THE SEVEN WAYS ROCKDALE NSW 2216<br><a href="https://witch.codes" style="color:inherit;">WITCH.CODES</a> &middot; <a href="https://witchcraft.business" style="color:inherit;">WITCHCRAFT.BUSINESS</a> &middot; <a href="https://witchcraft.living" style="color:inherit;">WITCHCRAFT.LIVING</a> &middot; <a href="https://witchcraft.homes" style="color:inherit;">WITCHCRAFT.HOMES</a> &middot; <a href="https://witchcraft.expert" style="color:inherit;">WITCHCRAFT.EXPERT</a> &middot; <a href="https://witchcraft.boutique" style="color:inherit;">WITCHCRAFT.BOUTIQUE</a> &middot; <a href="https://witchcraft.delivery" style="color:inherit;">WITCHCRAFT.DELIVERY</a> &middot; <a href="https://witchcraft.pics" style="color:inherit;">WITCHCRAFT.PICS</a> &middot; <a href="https://witchcraft.video" style="color:inherit;">WITCHCRAFT.VIDEO</a><br><a href="mailto:hecate@witch.codes" style="color:inherit;">HECATE@WITCH.CODES</a></div>
+</footer>
+
+<!-- ============================================================
+     LAYER 1 - THE SILK FIELD (raw WebGL, no dependency) + reveal
+     motion + poster turntable. If anything in here fails, the
+     page still stands complete as static HTML + CSS.
+     ============================================================ -->
+<script>
+(function(){
+  "use strict";
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- THE SILK FIELD ---------- */
+  var c = document.getElementById('field');
+  var gl = null;
+  if (c && !reduced) {
+    gl = c.getContext('webgl', {alpha:true, antialias:false, depth:false, stencil:false, powerPreference:'low-power'})
+      || c.getContext('experimental-webgl', {alpha:true, antialias:false});
+  }
+  if (gl) {
+    var VERT = 'attribute vec2 a;varying vec2 v;void main(){v=a;gl_Position=vec4(a,0.,1.);}';
+    var FRAG = [
+      'precision highp float;',
+      'uniform float u_time;',
+      'uniform vec2 u_res;',
+      'uniform vec2 u_mouse;',
+      'float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}',
+      'float noise(vec2 p){vec2 i=floor(p),f=fract(p);vec2 u=f*f*(3.0-2.0*f);',
+      'return mix(mix(hash(i),hash(i+vec2(1.,0.)),u.x),mix(hash(i+vec2(0.,1.)),hash(i+vec2(1.,1.)),u.x),u.y);}',
+      'float fbm(vec2 p){float v=0.0,a=0.5;mat2 r=mat2(cos(0.5),sin(0.5),-sin(0.5),cos(0.5));',
+      'for(int i=0;i<5;i++){v+=a*noise(p);p=r*p*2.0;a*=0.5;}return v;}',
+      'void main(){',
+      'vec2 uv=gl_FragCoord.xy/u_res.xy;',
+      'vec2 p=uv;p.x*=u_res.x/u_res.y;',
+      'float t=u_time*0.05;',
+      'vec2 m=u_mouse;m.x*=u_res.x/u_res.y;',
+      'vec2 q=vec2(fbm(p*1.5+vec2(0.0,t)),fbm(p*1.5+vec2(5.2,1.3)-vec2(0.0,t*0.7)));',
+      'vec2 r=vec2(fbm(p*1.5+3.0*q+vec2(1.7,9.2)+t*0.4),fbm(p*1.5+3.0*q+vec2(8.3,2.8)-t*0.5));',
+      'float f=fbm(p*2.0+3.0*r);',
+      'float silk=smoothstep(0.34,0.74,f);',
+      'float d=length(p-m);',
+      'silk*=smoothstep(0.0,0.55,d);',
+      'silk*=0.42;',
+      'vec3 col=vec3(0.945,0.929,0.898);',
+      'gl_FragColor=vec4(col*silk,silk);',
+      '}'
+    ].join('\n');
+
+    function compile(type, src){
+      var s = gl.createShader(type);
+      gl.shaderSource(s, src); gl.compileShader(s);
+      if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) { gl.deleteShader(s); return null; }
+      return s;
+    }
+    var vs = compile(gl.VERTEX_SHADER, VERT);
+    var fs = compile(gl.FRAGMENT_SHADER, FRAG);
+    if (vs && fs) {
+      var prog = gl.createProgram();
+      gl.attachShader(prog, vs); gl.attachShader(prog, fs); gl.linkProgram(prog);
+      if (gl.getProgramParameter(prog, gl.LINK_STATUS)) {
+        var buf = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+        gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+        var loc = gl.getAttribLocation(prog, 'a');
+        gl.enableVertexAttribArray(loc);
+        gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+        gl.useProgram(prog);
+        var uTime = gl.getUniformLocation(prog, 'u_time');
+        var uRes  = gl.getUniformLocation(prog, 'u_res');
+        var uMouse= gl.getUniformLocation(prog, 'u_mouse');
+        var dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+        var mouse = {x:0.5, y:0.5}, tx = 0.5, ty = 0.5;
+        var t0 = performance.now(), raf = 0, visible = !document.hidden;
+
+        function resize(){
+          var w = Math.floor(c.clientWidth * dpr), h = Math.floor(c.clientHeight * dpr);
+          if (!w || !h) return;
+          if (c.width !== w || c.height !== h) { c.width = w; c.height = h; }
+          gl.viewport(0, 0, c.width, c.height);
+          gl.uniform2f(uRes, c.width, c.height);
+        }
+        function frame(now){
+          raf = requestAnimationFrame(frame);
+          mouse.x += (tx - mouse.x) * 0.045;
+          mouse.y += (ty - mouse.y) * 0.045;
+          gl.uniform1f(uTime, (now - t0) / 1000);
+          gl.uniform2f(uMouse, mouse.x, mouse.y);
+          gl.drawArrays(gl.TRIANGLES, 0, 3);
+        }
+        function pump(){
+          var run = visible;
+          if (run && !raf) raf = requestAnimationFrame(frame);
+          else if (!run && raf) { cancelAnimationFrame(raf); raf = 0; }
+        }
+        window.addEventListener('pointermove', function(e){
+          tx = e.clientX / Math.max(1, window.innerWidth);
+          ty = 1 - e.clientY / Math.max(1, window.innerHeight);
+        }, {passive:true});
+        document.addEventListener('visibilitychange', function(){ visible = !document.hidden; pump(); });
+        window.addEventListener('resize', resize);
+        resize(); pump();
+      } else { gl.deleteProgram(prog); }
+    }
+  }
+
+  /* ---------- REVEAL MOTION ---------- */
+  var els = [].slice.call(document.querySelectorAll('.fx'));
+  if (reduced) { els.forEach(function(e){ e.classList.add('on'); }); }
+  else if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) {
+          var sibs = [].slice.call(en.target.parentElement.querySelectorAll('.fx'));
+          var i = sibs.indexOf(en.target);
+          en.target.style.transitionDelay = (Math.max(i,0) * 80) + 'ms';
+          en.target.classList.add('on');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:.1, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+    /* safety: reveal anything still hidden after 3s, so no content ever stays blank */
+    setTimeout(function(){ els.forEach(function(e){ if (!e.classList.contains('on')) e.classList.add('on'); }); }, 3000);
+  } else { els.forEach(function(e){ e.classList.add('on'); }); }
+
+  /* ---------- THE MOTION TITLE ---------- */
+  var mt = document.querySelector('.mt');
+  if (mt) {
+    if (reduced || !('IntersectionObserver' in window)) { mt.classList.add('on'); }
+    else {
+      new IntersectionObserver(function(entries){
+        if (entries[0].isIntersecting) { mt.classList.add('on'); }
+      }, {threshold:0}).observe(mt);
+    }
+  }
+
+  /* ---------- POSTER TURNTABLE ---------- */
+  var stage  = document.getElementById('stage');
+  var poster = document.getElementById('poster');
+  if (!stage || !poster) return;
+
+  var SALON = window.SALON = {
+    mode: 'poster', reduced: reduced, angle: 0,
+    onNudge: null, onGrab: null, LIMIT: 46
+  };
+  function paint(){ poster.querySelector('.poster-turn').style.setProperty('--turn', SALON.angle.toFixed(2) + 'deg'); }
+  function touched(){ stage.classList.add('touched'); }
+  SALON.nudge = function(delta){
+    if (SALON.mode === 'three' && typeof SALON.onNudge === 'function') { SALON.onNudge(delta); return; }
+    touched(); SALON.angle = Math.max(-SALON.LIMIT, Math.min(SALON.LIMIT, SALON.angle + delta)); paint();
+  };
+  SALON.home = function(){
+    if (SALON.mode === 'three' && typeof SALON.onNudge === 'function') { SALON.onNudge(0, true); return; }
+    SALON.angle = 0; paint();
+  };
+  var dragging = false, lastX = 0, pid = null;
+  stage.addEventListener('pointerdown', function(ev){
+    if (typeof SALON.onGrab === 'function') SALON.onGrab();
+    if (SALON.mode !== 'poster') return;
+    dragging = true; lastX = ev.clientX; pid = ev.pointerId; touched();
+    try { stage.setPointerCapture(pid); } catch(e){}
+  });
+  stage.addEventListener('pointermove', function(ev){
+    if (!dragging || SALON.mode !== 'poster') return;
+    var dx = ev.clientX - lastX; lastX = ev.clientX;
+    SALON.angle = Math.max(-SALON.LIMIT, Math.min(SALON.LIMIT, SALON.angle + dx * 0.42)); paint();
+  });
+  function release(ev){
+    if (!dragging) return; dragging = false;
+    try { if (pid !== null) stage.releasePointerCapture(pid); } catch(e){}
+    pid = null;
+  }
+  stage.addEventListener('pointerup', release);
+  stage.addEventListener('pointercancel', release);
+  stage.addEventListener('lostpointercapture', release);
+  stage.addEventListener('keydown', function(ev){
+    var k = ev.key;
+    if (k === 'ArrowLeft')       { SALON.nudge(-7);  ev.preventDefault(); }
+    else if (k === 'ArrowRight') { SALON.nudge(7);   ev.preventDefault(); }
+    else if (k === 'Home')       { SALON.home();     ev.preventDefault(); }
+  });
+  paint();
+})();
+</script>
+
+<!-- ============================================================
+     LAYER 2 - THE VESSEL. three@0.184.0, importmap, version locked.
+     Any failure at all and this block exits silently: the poster
+     above is already on the plinth and stays there.
+     ============================================================ -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+(async function(){
+  "use strict";
+  var SALON  = window.SALON;
+  var tt     = document.getElementById('turntable');
+  var stage  = document.getElementById('stage');
+  var canvas = document.getElementById('lathe');
+  if (!SALON || !tt || !stage || !canvas) return;
+
+  function hasWebGL(){
+    try {
+      var c = document.createElement('canvas');
+      return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl')));
+    } catch (e) { return false; }
+  }
+  if (!hasWebGL()) return;
+
+  var THREE, OrbitControls;
+  try {
+    THREE = await import('three');
+    OrbitControls = (await import('three/addons/controls/OrbitControls.js')).OrbitControls;
+  } catch (err) { return; }
+  if (!THREE || !OrbitControls) return;
+
+  var W = stage.clientWidth  || 400;
+  var H = stage.clientHeight || 420;
+  var renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true, powerPreference: 'default' });
+  } catch (err) { return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setSize(W, H, false);
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.05;
+
+  var scene  = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(30, W / H, 0.1, 100);
+  camera.position.set(0, 0.62, 8.6);
+
+  var PROFILE = [
+    [0.00, -1.62], [0.54, -1.62], [0.58, -1.50], [0.40, -1.36], [0.35, -1.14],
+    [0.52, -0.88], [0.76, -0.50], [0.90, -0.06], [0.94,  0.34], [0.85,  0.74],
+    [0.60,  1.06], [0.40,  1.26], [0.31,  1.44], [0.36,  1.58], [0.44,  1.66]
+  ];
+  var spline = new THREE.SplineCurve(PROFILE.map(function(p){ return new THREE.Vector2(p[0], p[1]); }));
+  var geo = new THREE.LatheGeometry(spline.getPoints(76), 132);
+  geo.computeVertexNormals();
+
+  function envSource(){
+    var c = document.createElement('canvas'); c.width = 16; c.height = 128;
+    var g = c.getContext('2d');
+    var grd = g.createLinearGradient(0, 0, 0, 128);
+    grd.addColorStop(0.00, '#ffffff');
+    grd.addColorStop(0.30, '#9a9a9a');
+    grd.addColorStop(0.60, '#3a3a3a');
+    grd.addColorStop(0.85, '#141414');
+    grd.addColorStop(1.00, '#000000');
+    g.fillStyle = grd; g.fillRect(0, 0, 16, 128);
+    var t = new THREE.CanvasTexture(c);
+    t.mapping = THREE.EquirectangularReflectionMapping;
+    t.colorSpace = THREE.SRGBColorSpace;
+    return t;
+  }
+  var pmrem = null, envRT = null;
+  try {
+    pmrem = new THREE.PMREMGenerator(renderer);
+    envRT = pmrem.fromEquirectangular(envSource());
+    scene.environment = envRT.texture;
+  } catch (err) { /* reflections are a luxury, lights still carry it */ }
+
+  var mat = new THREE.MeshStandardMaterial({ color: 0x141414, metalness: 0.82, roughness: 0.34, side: THREE.DoubleSide });
+  var ringMat = new THREE.MeshStandardMaterial({ color: 0xe8e8e8, metalness: 0.95, roughness: 0.18 });
+
+  var vessel = new THREE.Group();
+  var mesh = new THREE.Mesh(geo, mat);
+  vessel.add(mesh);
+  var ringGeo = new THREE.TorusGeometry(0.585, 0.028, 18, 120);
+  var ring = new THREE.Mesh(ringGeo, ringMat);
+  ring.rotation.x = Math.PI / 2; ring.position.y = -1.55;
+  vessel.add(ring);
+  scene.add(vessel);
+
+  var key  = new THREE.DirectionalLight(0xfff7ea, 3.0); key.position.set(-3.3, 4.5, 5.4);
+  var fill = new THREE.DirectionalLight(0x3a3a44, 1.0); fill.position.set(4.2, -1.3, -3.6);
+  var amb  = new THREE.HemisphereLight(0xe8e8e8, 0x080808, 0.5);
+  scene.add(key, fill, amb);
+
+  var controls = new OrbitControls(camera, canvas);
+  controls.enablePan   = false;
+  controls.enableZoom  = false;
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.075;
+  controls.rotateSpeed = 0.85;
+  controls.target.set(0, 0.05, 0);
+  controls.minPolarAngle = Math.PI * 0.27;
+  controls.maxPolarAngle = Math.PI * 0.63;
+  controls.autoRotate = !SALON.reduced;
+  controls.autoRotateSpeed = 0.9;
+  controls.update();
+
+  var idleTimer = null;
+  function halt(){ controls.autoRotate = false; if (idleTimer) { clearTimeout(idleTimer); idleTimer = null; } }
+  function resumeLater(){
+    if (SALON.reduced) return;
+    if (idleTimer) clearTimeout(idleTimer);
+    idleTimer = setTimeout(function(){ controls.autoRotate = true; idleTimer = null; }, 6000);
+  }
+  canvas.addEventListener('pointerdown', halt, { passive: true });
+  window.addEventListener('pointerup',  resumeLater, { passive: true });
+  window.addEventListener('pointercancel', resumeLater, { passive: true });
+
+  var HOME = camera.position.clone();
+  var _sph = new THREE.Spherical();
+  var _off = new THREE.Vector3();
+  SALON.onNudge = function(deg, home){
+    halt();
+    if (home) {
+      camera.position.copy(HOME);
+      vessel.rotation.y = 0;
+    } else {
+      _off.copy(camera.position).sub(controls.target);
+      _sph.setFromVector3(_off);
+      _sph.theta += deg * Math.PI / 180;
+      _off.setFromSpherical(_sph);
+      camera.position.copy(controls.target).add(_off);
+    }
+    camera.lookAt(controls.target);
+    controls.update();
+    resumeLater();
+    request();
+  };
+  SALON.onGrab = halt;
+
+  var inView = false, visible = !document.hidden, raf = 0, alive = true;
+  function frame(){
+    if (!alive) { raf = 0; return; }
+    raf = requestAnimationFrame(frame);
+    controls.update();
+    renderer.render(scene, camera);
+  }
+  function pump(){
+    var run = alive && inView && visible;
+    if (run && !raf) raf = requestAnimationFrame(frame);
+    else if (!run && raf) { cancelAnimationFrame(raf); raf = 0; }
+  }
+  function request(){ if (!raf) { renderer.render(scene, camera); } }
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(entries){
+      inView = entries[0].isIntersecting; pump();
+    }, { threshold: 0.02 }).observe(tt);
+  } else { inView = true; }
+
+  document.addEventListener('visibilitychange', function(){ visible = !document.hidden; pump(); });
+
+  function resize(){
+    var w = stage.clientWidth, h = stage.clientHeight;
+    if (!w || !h) return;
+    W = w; H = h;
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+    renderer.setSize(w, h, false);
+    request();
+  }
+  if ('ResizeObserver' in window) { new ResizeObserver(resize).observe(stage); }
+  else { window.addEventListener('resize', resize); }
+
+  canvas.addEventListener('webglcontextlost', function(ev){
+    ev.preventDefault();
+    tt.classList.remove('is-live');
+    SALON.mode = 'poster';
+    SALON.onNudge = null; SALON.onGrab = null;
+    if (raf) { cancelAnimationFrame(raf); raf = 0; }
+  }, false);
+  canvas.addEventListener('webglcontextrestored', function(){
+    tt.classList.add('is-live');
+    SALON.mode = 'three';
+    resize(); pump();
+  }, false);
+
+  function dispose(){
+    alive = false;
+    if (raf) { cancelAnimationFrame(raf); raf = 0; }
+    try { controls.dispose(); } catch(e){}
+    try { geo.dispose(); ringGeo.dispose(); mat.dispose(); ringMat.dispose(); } catch(e){}
+    try { if (envRT) envRT.dispose(); if (pmrem) pmrem.dispose(); } catch(e){}
+    try { renderer.dispose(); } catch(e){}
+  }
+  window.addEventListener('pagehide', dispose);
+  SALON.dispose = dispose;
+
+  renderer.render(scene, camera);
+  SALON.mode = 'three';
+  tt.classList.add('is-live');
+  inView = true;
+  pump();
+})().catch(function(){ /* the poster is already the page. Nothing to do. */ });
+</script>
+
+</body>
+</html>
